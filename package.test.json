@@ -7,6 +7,8 @@
     "node": ">=8"
   },
   "scripts": {
+    "prestart-dev": "npm run lint-fix",
+    "start": "npm run build && node build/index.js",
     "lint-fix": "npx standard \"src/*.js\" --fix",
     "lint": "npx standard \"src/*.js\"",
     "postbuild-clean": "npm run build",
