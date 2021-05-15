@@ -5,8 +5,10 @@
   "main": "src/index.js",
   "engines": {
     "node": ">=8"
-  },git
+  },
   "scripts": {
+    "lint-fix": "npx standard \"src/*.js\" --fix",
+    "lint": "npx standard \"src/*.js\"",
     "postbuild-clean": "npm run build",
     "build-clean": "rm -rf build",
     "build": "babel src -d build",
