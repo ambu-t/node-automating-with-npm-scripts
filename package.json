@@ -5,9 +5,10 @@
   "main": "src/index.js",
   "engines": {
     "node": ">=8"
-  },
+  },git
   "scripts": {
-    "build-clean": "rm -f build",
+    "postbuild-clean": "npm run build",
+    "build-clean": "rm -rf build",
     "build": "babel src -d build",
     "test": "mocha",
     "test:module2": "mocha test/module2.test.js",
